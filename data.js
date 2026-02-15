@@ -53,16 +53,16 @@ window.PORTFOLIO = {
       description:
         "Android news app to browse/search real-time articles across categories. Multi-Module Clean Architecture + MVVM + Hilt, with improved performance via optimized state management and network calls.",
       tech: ["Kotlin", "MVVM", "Hilt", "Retrofit", "Coroutines"],
-      github: "https://github.com/rehamohamedev24",
+      github: "https://github.com/rehamohamedev24/FlashFeed_News_App",
       live: "",
     },
     {
-      title: "Meals App",
+      title: "Islami App",
       image: "assets/projects/meals.jpg",
       description:
-        "Food browsing app displaying hundreds of meals fetched from public API. Built with modular architecture and Android architecture components to improve build times and enable smooth teamwork.",
-      tech: ["Kotlin", "Jetpack Compose", "MVVM", "Retrofit"],
-      github: "https://github.com/rehamohamedev24",
+        "Android Islamic app featuring four main tabs: Quran reading, Hadith collection, Tasbeeh counter, and Islamic radio streaming. Built with clean UI, structured navigation, and responsive design to provide a smooth and intuitive user experience.",
+      tech: ["Kotlin", "XML", "Retrofit"],
+      github: "https://github.com/rehamohamedev24/Islami_App",
       live: "",
     },
   ],
