@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reham Mohammed Ahmed — Android Developer</title>
+  <meta name="description" content="Android Developer (Kotlin) — MVVM, Clean Architecture, Jetpack Compose, Retrofit, Room, Firebase." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Reham</span>
+      </a>
+
+      <nav class="nav__links">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="mode" id="modeBtn" aria-label="Toggle theme">
+        <span class="mode__icon" id="modeIcon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <!-- HERO -->
+    <section class="hero card">
+      <div class="hero__left">
+        <div class="pill">✨ Available — Android Developer</div>
+        <h1 class="hero__title" id="name">Reham Mohammed Ahmed</h1>
+        <p class="hero__subtitle" id="role">Android Developer • Egypt</p>
+        <p class="hero__lead" id="summary"></p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" id="resumeBtn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <a class="btn" id="emailBtn" href="#">Email</a>
+          <a class="btn" id="githubBtn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" id="linkedinBtn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="meta">
+          <div class="meta__item">📞 <span id="phone"></span></div>
+          <div class="meta__item">✉️ <span id="email"></span></div>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="avatar card card--soft">
+          <img id="avatar" src="assets/avatar.jpg" alt="Reham avatar" onerror="this.style.display='none'" />
+          <div class="avatar__fallback">
+            <div class="avatar__badge">Android</div>
+            <div class="avatar__text">
+              <div class="avatar__name">Reham</div>
+              <div class="avatar__small">Kotlin • MVVM • Clean Arch</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlights card card--soft" id="highlights"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <div class="icon">⚡</div>
+        <div>
+          <h2>Skills</h2>
+          <p class="muted">Core stack and tools I use</p>
+        </div>
+      </div>
+
+      <div class="grid grid--2" id="skillsGrid"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head section__head--row">
+        <div class="section__headLeft">
+          <div class="icon">🧩</div>
+          <div>
+            <h2>Projects</h2>
+            <p class="muted">Selected Android work (clean architecture & performance-focused)</p>
+          </div>
+        </div>
+
+        <div class="search">
+          <input id="projectSearch" type="search" placeholder="Search projects…" />
+        </div>
+      </div>
+
+      <div class="grid grid--2" id="projectsGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <div class="icon">💼</div>
+        <div>
+          <h2>Experience</h2>
+          <p class="muted">Training & internships</p>
+        </div>
+      </div>
+
+      <div class="stack" id="experienceStack"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <div class="icon">🎓</div>
+        <div>
+          <h2>Education</h2>
+          <p class="muted">Academic background</p>
+        </div>
+      </div>
+
+      <div class="card" id="educationCard"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <div class="icon">📬</div>
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">Let’s build something solid</p>
+        </div>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>Work inquiries</h3>
+          <p class="muted">Best way: email. I usually reply within 24–48 hours.</p>
+          <div class="actions">
+            <a class="btn btn--primary" id="emailBtn2" href="#">Send Email</a>
+            <a class="btn" id="phoneBtn" href="#">Call</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Links</h3>
+          <p class="muted">Connect or review my work.</p>
+          <div class="actions">
+            <a class="btn" id="githubBtn2" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" id="linkedinBtn2" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <hr class="sep" />
+          <p class="tiny muted">Tip: Put your resume at <b>assets/resume.pdf</b>.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> <span id="footerName">Reham Mohammed Ahmed</span></div>
+      <div class="footer__links">
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
