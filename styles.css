@@ -83,7 +83,7 @@ a:hover{opacity:.92}
   border:1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding:40px;
+  padding:20px;
 }
 :root.light .card{background: var(--card)}
 .card--soft{
@@ -95,6 +95,10 @@ a:hover{opacity:.92}
   display:grid;
   gap:32px;
 }
+.hero.card{
+  padding: 48px;
+}
+
 @media(min-width:960px){
   .hero{grid-template-columns: 1.35fr .65fr}
 }
