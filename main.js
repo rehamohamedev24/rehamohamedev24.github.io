@@ -12,10 +12,6 @@ function setHref(id, href) {
   if (el) el.href = href ?? "#";
 }
 
-function renderHighlights() {
-  const wrap = $("#highlights");
-  wrap.innerHTML = data.highlights.map(s => `<span class="chip">${s}</span>`).join("");
-}
 
 function renderSkills() {
   const grid = $("#skillsGrid");
@@ -141,7 +137,6 @@ function hydrate() {
   setHref("#linkedinBtn", data.linkedin);
   setHref("#linkedinBtn2", data.linkedin);
 
-  renderHighlights();
   renderSkills();
   renderProjects(data.projects);
   renderExperience();
