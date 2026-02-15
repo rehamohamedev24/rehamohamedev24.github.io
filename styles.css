@@ -252,3 +252,63 @@ h3{margin:0 0 8px;font-size:16px}
   background: rgba(255,255,255,.03);
 }
 
+/* ===== 3D Floating Circular Avatar (PNG transparent) ===== */
+
+.profileWrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* glow behind */
+.profileWrap::before{
+  content:"";
+  position:absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.18), transparent 70%);
+  filter: blur(28px);
+  z-index: 0;
+}
+
+.profile3d{
+  position: relative;
+  z-index: 1;
+
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* makes it look real/floating */
+  filter:
+    drop-shadow(0 22px 35px rgba(0,0,0,.55))
+    drop-shadow(0 0 24px rgba(255,255,255,.08));
+
+  animation: floaty 4s ease-in-out infinite;
+}
+
+.profile3d:hover{
+  transform: translateY(-2px) scale(1.02);
+  transition: transform .2s ease;
+}
+
+@keyframes floaty{
+  0%{ transform: translateY(0px); }
+  50%{ transform: translateY(-10px); }
+  100%{ transform: translateY(0px); }
+}
+
+@media (max-width: 500px){
+  .profileWrap::before{
+    width: 240px;
+    height: 240px;
+  }
+  .profile3d{
+    width: 210px;
+    height: 210px;
+  }
+}
