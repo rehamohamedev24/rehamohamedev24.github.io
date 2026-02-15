@@ -5,7 +5,7 @@ window.PORTFOLIO = {
   phone: "+201157449413",
   email: "rehamohamedev24@gmail.com",
   github: "https://github.com/rehamohamedev24",
-  linkedin: "Linkedin", // حطي لينك LinkedIn الحقيقي هنا
+  linkedin: "https://www.linkedin.com/in/reham-mohammed24", 
   resume: "assets/resume.pdf",
 
   summary:
