@@ -40,11 +40,11 @@ window.PORTFOLIO = {
   projects: [
     {
       title: "E-Commerce App",
-      image: "assets/projects/ecommerce.jpg",
+      image: "assets/projects/ecommerce.png",
       description:
         "Full-featured Android e-commerce app: browse/search products, product details, favorites, cart, and checkout flow. Built end-to-end using Multi-Module Clean Architecture (app/domain/data) and MVVM with offline caching for reliability.",
       tech: ["Kotlin", "MVVM", "Clean Architecture", "Room", "Retrofit", "Hilt"],
-      github: "https://github.com/rehamohamedev24", // حطي لينك الريبو الحقيقي
+      github: "https://github.com/rehamohamedev24/E-Commerce",
       live: "",
     },
     {
