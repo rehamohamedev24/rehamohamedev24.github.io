@@ -100,7 +100,7 @@ function renderExperience() {
           <h3>${x.title}</h3>
           <p class="muted">${x.company} • ${x.location}</p>
         </div>
-        <span class="pill2">${x.period}</span>
+        <span class="exp__date">${x.period}</span>
       </div>
       <p class="muted" style="margin-top:10px">${x.description}</p>
       <ul style="margin:10px 0 0;padding-left:18px;color:var(--muted)">
