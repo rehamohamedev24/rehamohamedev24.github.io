@@ -252,6 +252,29 @@ h3{margin:0 0 8px;font-size:16px}
   background: rgba(255,255,255,.03);
 }
 
+.profileImage{
+  padding:12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage img{
+  width:100%;
+  max-width:280px;
+  height: auto;
+  border-radius:18px;
+  object-fit: cover;
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform .2s ease;
+}
+
+.profileImage img: hover{
+  transform: scale(1.02);
+}
+
+
 : root.light .projectCardLink: hover{
   border-color: rgba(16,24,40,.20);
   background: rgba(13,19,32,.02);
