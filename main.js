@@ -13,14 +13,50 @@ function setHref(id, href) {
 }
 
 
+function getSkillIconName(name) {
+  const map = {
+    "Kotlin": "code-2",
+    "Java": "coffee",
+    "Android SDK": "smartphone",
+    "Jetpack Compose": "palette",
+    "Android Jetpack (ViewModel, LiveData, Navigation)": "layers",
+    "MVVM Architecture": "boxes",
+    "Clean Architecture (Multi-Module)": "layout-grid",
+    "Hilt (Dependency Injection)": "package",
+    "Coroutines & Flow": "zap",
+    "Retrofit (REST APIs)": "globe",
+    "Room / DataStore / SharedPreferences": "database",
+    "Firebase + GitHub Actions (CI/CD)": "flame",
+  };
+
+  return map[name] || "check";
+}
+
 function renderSkills() {
   const grid = $("#skillsGrid");
-  grid.innerHTML = data.skills.map(s => `
+  if (!grid) return;
+
+  grid.innerHTML = (data.skills || []).map(s => `
     <div class="card skill">
-      <div class="skill__top"><b>${s.name}</b><span>${s.level}%</span></div>
-      <div class="bar"><div class="fill" data-level="${s.level}"></div></div>
+      <div class="skill__top">
+        <div class="skill__left">
+          <span class="skill__icon">
+            <i data-lucide="${getSkillIconName(s.name)}"></i>
+          </span>
+          <b>${s.name}</b>
+        </div>
+        <span>${s.level}%</span>
+      </div>
+      <div class="bar">
+        <div class="fill" data-level="${s.level}"></div>
+      </div>
     </div>
   `).join("");
+
+  // render lucide icons
+  if (window.lucide?.createIcons) {
+    window.lucide.createIcons();
+  }
 
   // animate when visible
   const fills = document.querySelectorAll(".fill[data-level]");
@@ -32,8 +68,10 @@ function renderSkills() {
       }
     });
   }, { threshold: 0.35 });
+
   fills.forEach(f => io.observe(f));
 }
+
 
 function projectCard(p) {
   return `
