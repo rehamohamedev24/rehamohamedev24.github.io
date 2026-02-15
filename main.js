@@ -40,20 +40,17 @@ function renderSkills() {
 }
 
 function projectCard(p) {
-  const liveBtn = p.live ? `<a class="btn" href="${p.live}" target="_blank" rel="noreferrer">Live</a>` : "";
   return `
-    <div class="card">
+    <a class="card projectCardLink" href="${p.github}" target="_blank" rel="noreferrer"
+       aria-label="Open ${p.title} on GitHub">
       <img class="project__img" src="${p.image}" alt="${p.title}" onerror="this.style.display='none'"/>
       <h3 style="margin-top:12px">${p.title}</h3>
       <p class="muted">${p.description}</p>
       <div class="tags">${p.tech.map(t => `<span class="tag">${t}</span>`).join("")}</div>
-      <div class="actions">
-        <a class="btn btn--primary" href="${p.github}" target="_blank" rel="noreferrer">Code</a>
-        ${liveBtn}
-      </div>
-    </div>
+    </a>
   `;
 }
+
 
 function renderProjects(list) {
   const grid = $("#projectsGrid");
