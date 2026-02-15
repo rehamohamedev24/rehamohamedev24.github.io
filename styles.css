@@ -319,3 +319,33 @@ h3{margin:0 0 8px;font-size:16px}
     height: 210px;
   }
 }
+
+.skill__left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.skill__icon{
+  width:28px;
+  height:28px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid var(--border);
+  background: rgba(0, 200, 83, 0.10);
+}
+
+.skill__icon svg{
+  width:16px;
+  height:16px;
+  stroke: #00e676;
+}
+:root.light .skill__icon{
+  background: rgba(0, 200, 83, 0.08);
+}
+:root.light .skill__icon svg{
+  stroke: #00c853;
+}
