@@ -49,7 +49,7 @@ window.PORTFOLIO = {
     },
     {
       title: "FlashFeed News App",
-      image: "assets/projects/flashfeed.jpg",
+      image: "assets/projects/news.png",
       description:
         "Android news app to browse/search real-time articles across categories. Multi-Module Clean Architecture + MVVM + Hilt, with improved performance via optimized state management and network calls.",
       tech: ["Kotlin", "MVVM", "Hilt", "Retrofit", "Coroutines"],
@@ -58,7 +58,7 @@ window.PORTFOLIO = {
     },
     {
       title: "Islami App",
-      image: "assets/projects/meals.jpg",
+      image: "assets/projects/islami.png",
       description:
         "Android Islamic app featuring four main tabs: Quran reading, Hadith collection, Tasbeeh counter, and Islamic radio streaming. Built with clean UI, structured navigation, and responsive design to provide a smooth and intuitive user experience.",
       tech: ["Kotlin", "XML", "Retrofit"],
