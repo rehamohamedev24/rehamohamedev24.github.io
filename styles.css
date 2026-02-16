@@ -123,9 +123,6 @@ a:hover{opacity:.92}
   align-items:flex-start;
   gap:14px;
 }
-.hero__resume{
-  display:block;
-}
 
 .hero__contacts{
   display:flex;
