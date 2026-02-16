@@ -117,7 +117,21 @@ a:hover{opacity:.92}
 .hero__lead{margin-top:12px;color:rgba(233,237,243,.92)}
 :root.light .hero__lead{color:#1f2937}
 
-.hero__cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.hero__cta{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:14px;
+}
+.hero__resume{
+  display:block;
+}
+
+.hero__contacts{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   padding:10px 12px;
@@ -133,15 +147,6 @@ a:hover{opacity:.92}
   border-color: transparent;
 }
 .btn:hover{transform: translateY(-1px)}
-
-.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-.meta__item{
-  color:var(--muted);
-  border:1px dashed var(--border);
-  padding:8px 10px;
-  border-radius:14px;
-  font-size:13px;
-}
 
 .avatar{display:flex;flex-direction:column;gap:12px;overflow:hidden}
 .avatar img{width:100%;max-width:280px;height:240px;object-fit:cover;border-radius:14px}
