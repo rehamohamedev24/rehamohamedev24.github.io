@@ -201,7 +201,9 @@ a:hover{opacity:.92}
   display:block;
 }
 
-
+:root.light .icon svg{
+  stroke:#0d1320; 
+}
 h2{margin:0 0 6px;font-size:22px;letter-spacing:-.2px}
 h3{margin:0 0 8px;font-size:16px}
 .muted{color:var(--muted)}
