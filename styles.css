@@ -400,3 +400,44 @@ h3{margin:0 0 8px;font-size:16px}
   }
 }
 
+/* Resume download link style */
+
+.resumeLink{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  color:#00e676;
+  font-weight:500;
+  font-size:15px;
+
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+
+  transition: all .2s ease;
+}
+
+.resumeLink svg{
+  width:18px;
+  height:18px;
+  stroke:#00e676;
+}
+
+.resumeLink:hover{
+  border-bottom:1px solid #00e676;
+  transform: translateY(-1px);
+}
+
+/* light mode */
+:root.light .resumeLink{
+  color:#00c853;
+}
+
+:root.light .resumeLink svg{
+  stroke:#00c853;
+}
+
+:root.light .resumeLink:hover{
+  border-bottom:1px solid #00c853;
+}
+
