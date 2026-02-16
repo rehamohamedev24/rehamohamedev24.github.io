@@ -483,6 +483,10 @@ h3{margin:0 0 8px;font-size:16px}
 
 .contactCard{
   padding:24px;
+  height:100%;    
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
 }
 
 .contactTop{
