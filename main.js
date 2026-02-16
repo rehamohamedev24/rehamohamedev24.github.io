@@ -117,7 +117,7 @@ function renderEducation() {
     <div class="edu">
       
       <div class="edu__imgWrap">
-        <img src="assets/bu.png" alt="Beni-Suef University" class="edu__img"/>
+        <img src="assets/bu.jpg" alt="Beni-Suef University" class="edu__img"/>
       </div>
 
       <div class="edu__content">
