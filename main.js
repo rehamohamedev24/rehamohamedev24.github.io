@@ -112,15 +112,28 @@ function renderExperience() {
 
 function renderEducation() {
   const e = data.education;
+
   $("#educationCard").innerHTML = `
-    <h3>${e.degree}</h3>
-    <p class="muted">${e.school}</p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-      <span class="pill2">${e.date}</span>
-      <span class="pill2">GPA: ${e.gpa}</span>
+    <div class="edu">
+      
+      <div class="edu__imgWrap">
+        <img src="assets/bu.png" alt="Beni-Suef University" class="edu__img"/>
+      </div>
+
+      <div class="edu__content">
+        <h3>${e.degree}</h3>
+        <p class="muted">${e.school}</p>
+
+        <div class="edu__meta">
+          <span class="pill2">${e.date}</span>
+          <span class="pill2">GPA: ${e.gpa}</span>
+        </div>
+      </div>
+
     </div>
   `;
 }
+
 
 function setupSearch() {
   const input = $("#projectSearch");
