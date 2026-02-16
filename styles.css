@@ -438,6 +438,15 @@ h3{margin:0 0 8px;font-size:16px}
 :root.light .resumeLink svg{
   stroke:#00c853;
 }
+/* keep right column (image) aligned to top */
+@media(min-width:960px){
+  .hero{
+    align-items:start;     
+  }
+  .hero__right{
+    align-self:start;    
+  }
+}
 
 :root.light .resumeLink:hover{
   border-bottom:1px solid #00c853;
