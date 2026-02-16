@@ -232,15 +232,11 @@ h3{margin:0 0 8px;font-size:16px}
 :root.light .fill{background: linear-gradient(90deg, #00c853, #00e676);}
 
 .project__img{
-  width:100%; height:180px; object-fit:cover;
+  width:100%; aspect-ratio: 16/9; object-fit:cover;
   border-radius:14px; border:1px solid var(--border);
   background: rgba(255,255,255,.03);
 }
-@media (min-width:1024px){
-  .project__img{
-    height:230px; 
-  }
-}
+
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .tag{
   font-size:12px;color:var(--muted);
