@@ -238,7 +238,7 @@ h3{margin:0 0 8px;font-size:16px}
 }
 @media (min-width:960px){
   .project__img{
-    height:180px;      
+    height:160px;      
   }
 }
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
