@@ -178,12 +178,29 @@ a:hover{opacity:.92}
 .section__head--row{justify-content:space-between;gap:12px;flex-wrap:wrap}
 .section__headLeft{display:flex;gap:10px;align-items:flex-start}
 .icon{
-  width:36px;height:36px;
+  width:42px;
+  height:42px;
   border-radius:14px;
+
   border:1px solid var(--border);
-  background: rgba(255,255,255,.06);
-  display:flex;align-items:center;justify-content:center;
+  background: rgba(255,255,255,.04);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
 }
+.icon svg{
+  width:20px;
+  height:20px;
+
+  stroke:#00e676;
+  stroke-width:2;
+
+  display:block;
+}
+
 
 h2{margin:0 0 6px;font-size:22px;letter-spacing:-.2px}
 h3{margin:0 0 8px;font-size:16px}
