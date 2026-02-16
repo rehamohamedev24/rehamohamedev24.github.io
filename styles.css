@@ -464,3 +464,78 @@ h3{margin:0 0 8px;font-size:16px}
   border-bottom:1px solid #00c853;
 }
 
+/* ===== Contact section upgrade ===== */
+
+.contactGrid{
+  display:grid;
+  gap:12px;
+  grid-template-columns: 1fr;
+}
+@media(min-width:960px){
+  .contactGrid{
+    grid-template-columns: 1.2fr .8fr;
+    align-items:stretch;
+  }
+}
+
+.contactCard{
+  padding:24px;
+}
+
+.contactTop{
+  margin-bottom: 14px;
+}
+
+.contactTitle{
+  margin:0 0 8px;
+  font-size:18px;
+}
+
+.contactDesc{
+  margin:0;
+}
+
+.contactCTA{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+
+.contactCTA .btn{
+  gap:8px;
+}
+
+.contactCTA .btn svg{
+  width:18px;
+  height:18px;
+}
+
+.contactMini{
+  margin-top:14px;
+  display:grid;
+  gap:8px;
+}
+
+.contactLine{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.contactLine svg{
+  width:18px;
+  height:18px;
+  stroke: #00e676;
+}
+
+:root.light .contactLine svg{
+  stroke: #0d1320;
+}
+
+.contactIcons{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-top:12px;
+}
