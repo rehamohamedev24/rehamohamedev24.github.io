@@ -232,7 +232,7 @@ h3{margin:0 0 8px;font-size:16px}
 :root.light .fill{background: linear-gradient(90deg, #00c853, #00e676);}
 
 .project__img{
-  width:100%; height:200px; object-fit:cover;
+  width:100%; height:220px; object-fit:contain;
   border-radius:14px; border:1px solid var(--border);
   background: rgba(255,255,255,.03);
 }
