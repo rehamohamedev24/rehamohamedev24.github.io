@@ -146,36 +146,70 @@
 
     <!-- CONTACT -->
     <section class="section" id="contact">
-      <div class="section__head">
-        <div class="icon">
-          <i data-lucide="contact"></i>
-        </div>
-        <div>
-          <h2>Contact</h2>
-          <p class="muted">Let’s build something solid</p>
-        </div>
+  <div class="section__head">
+    <div class="icon"><i data-lucide="mail"></i></div>
+    <div>
+      <h2>Contact</h2>
+      <p class="muted">Let’s build something solid</p>
+    </div>
+  </div>
+
+  <div class="contactGrid">
+    <!-- CTA Card -->
+    <div class="card contactCard">
+      <div class="contactTop">
+        <h3 class="contactTitle">Ready to work together?</h3>
+        <p class="muted contactDesc">
+          I’m available for Android roles & freelance projects. Send a brief message with your goal and timeline — I’ll reply within 24–48 hours.
+        </p>
       </div>
 
-      <div class="grid grid--2">
-        <div class="card">
-          <h3>Work inquiries</h3>
-          <p class="muted">Best way: email. I usually reply within 24–48 hours.</p>
-          <div class="actions">
-            <a class="btn btn--primary" id="emailBtn2" href="#">Send Email</a>
-            <a class="btn" id="phoneBtn" href="#">Call</a>
-          </div>
-        </div>
+      <div class="contactCTA">
+        <a class="btn btn--primary" id="emailBtn2" href="#">
+          <i data-lucide="mail"></i>
+          Email Me
+        </a>
 
-        <div class="card">
-          <h3>Links</h3>
-          <p class="muted">Connect or review my work.</p>
-          <div class="actions">
-            <a class="btn" id="githubBtn2" href="#" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn" id="linkedinBtn2" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
+        <a class="btn" id="phoneBtn2" href="#">
+          <i data-lucide="phone"></i>
+          Call
+        </a>
+      </div>
+
+      <div class="contactMini">
+        <div class="contactLine">
+          <i data-lucide="clock"></i>
+          <span class="muted">Response time: 24–48 hours</span>
+        </div>
+        <div class="contactLine">
+          <i data-lucide="map-pin"></i>
+          <span class="muted">Egypt (Remote-friendly)</span>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Links Card -->
+    <div class="card contactCard">
+      <h3 class="contactTitle">Quick links</h3>
+      <p class="muted contactDesc">Check my work & connect with me.</p>
+
+      <div class="contactIcons">
+        <a class="iconBtn" id="githubBtn2" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a class="iconBtn" id="linkedinBtn2" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a class="iconBtn" id="resumeBtn2" href="assets/resume.pdf" target="_blank" rel="noreferrer" aria-label="Resume">
+          <i data-lucide="download"></i>
+        </a>
+      </div>
+
+      <hr class="sep" />
+    </div>
+  </div>
+</section>
+
 
     <footer class="footer">
       <div>© <span id="year"></span> <span id="footerName">Reham Mohammed Ahmed</span></div>
