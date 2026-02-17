@@ -594,4 +594,22 @@ h3{margin:0 0 8px;font-size:16px}
   }
 }
 
+.aboutCard{
+  padding: 28px;
+  line-height: 1.7;
+}
+
+.aboutText{
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 700px;
+}
+
+.aboutText p{
+  margin-bottom: 14px;
+}
+
+.aboutText p:last-child{
+  margin-bottom: 0;
+}
 
