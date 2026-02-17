@@ -167,10 +167,7 @@ function setupTheme() {
   });
 }
 
-
-function hydrate() {
-
-  function setupMobileMenu(){
+function setupMobileMenu(){
     const btn = document.getElementById("menuBtn");
     const links = document.getElementById("navLinks");
     if (!btn || !links) return;
@@ -185,6 +182,9 @@ function hydrate() {
       a.addEventListener("click", () => links.classList.remove("open"));
     });
   }
+
+function hydrate() {
+
   setText("#summary", data.summary);
   setText("#phone", data.phone);
   setText("#email", data.email);
@@ -211,6 +211,7 @@ function hydrate() {
   renderEducation();
   setupSearch();
   setupTheme();
+  setupMobileMenu()
   if (window.lucide?.createIcons) window.lucide.createIcons();
 
 }
