@@ -167,6 +167,22 @@ function setupTheme() {
   });
 }
 
+function setupMobileMenu(){
+  const btn = document.getElementById("menuBtn");
+  const links = document.getElementById("navLinks");
+  if (!btn || !links) return;
+
+  btn.addEventListener("click", () => {
+    links.classList.toggle("open");
+    if (window.lucide?.createIcons) window.lucide.createIcons();
+  });
+
+  // close after click
+  links.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => links.classList.remove("open"));
+  });
+}
+
 function hydrate() {
   setText("#summary", data.summary);
   setText("#phone", data.phone);
@@ -194,6 +210,9 @@ function hydrate() {
   renderEducation();
   setupSearch();
   setupTheme();
+  setupMobileMenu();
+  if (window.lucide?.createIcons) window.lucide.createIcons();
+
 }
 
 hydrate();
