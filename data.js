@@ -7,6 +7,8 @@ window.PORTFOLIO = {
   github: "https://github.com/rehamohamedev24",
   linkedin: "https://www.linkedin.com/in/reham-mohammed24", 
   resume: "assets/resume.pdf",
+  whatsapp: "https://wa.me/201157449413",
+
 
   summary:
     "Android Developer and Computer Science graduate with hands-on experience building 5+ Android applications using Kotlin. Skilled in Jetpack Compose, Android Jetpack components, MVVM, and modular Clean Architecture with a strong focus on performance, scalability, and user experience.",
