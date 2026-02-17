@@ -167,23 +167,24 @@ function setupTheme() {
   });
 }
 
-function setupMobileMenu(){
-  const btn = document.getElementById("menuBtn");
-  const links = document.getElementById("navLinks");
-  if (!btn || !links) return;
-
-  btn.addEventListener("click", () => {
-    links.classList.toggle("open");
-    if (window.lucide?.createIcons) window.lucide.createIcons();
-  });
-
-  // close after click
-  links.querySelectorAll("a").forEach(a => {
-    a.addEventListener("click", () => links.classList.remove("open"));
-  });
-}
 
 function hydrate() {
+
+  function setupMobileMenu(){
+    const btn = document.getElementById("menuBtn");
+    const links = document.getElementById("navLinks");
+    if (!btn || !links) return;
+  
+    btn.addEventListener("click", () => {
+      links.classList.toggle("open");
+      if (window.lucide?.createIcons) window.lucide.createIcons();
+    });
+  
+    // close after click
+    links.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => links.classList.remove("open"));
+    });
+  }
   setText("#summary", data.summary);
   setText("#phone", data.phone);
   setText("#email", data.email);
@@ -210,7 +211,6 @@ function hydrate() {
   renderEducation();
   setupSearch();
   setupTheme();
-  setupMobileMenu();
   if (window.lucide?.createIcons) window.lucide.createIcons();
 
 }
