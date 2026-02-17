@@ -167,21 +167,29 @@ function setupTheme() {
   });
 }
 
-function setupMobileMenu(){
-    const btn = document.getElementById("menuBtn");
-    const links = document.getElementById("navLinks");
-    if (!btn || !links) return;
-  
-    btn.addEventListener("click", () => {
-      links.classList.toggle("open");
-      if (window.lucide?.createIcons) window.lucide.createIcons();
-    });
-  
-    // close after click
-    links.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => links.classList.remove("open"));
-    });
-  }
+function setupMobileNav() {
+  const nav = document.querySelector(".nav");
+  const toggle = document.querySelector("#navToggle");
+  const links = document.querySelectorAll(".nav__links a");
+
+  if (!nav || !toggle) return;
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("nav--open");
+  });
+
+  // اقفل المنيو بعد الضغط على أي لينك
+  links.forEach(a => a.addEventListener("click", () => {
+    nav.classList.remove("nav--open");
+  }));
+
+  // اقفل لو المستخدم ضغط برا
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target)) nav.classList.remove("nav--open");
+  });
+}
+
 
 function hydrate() {
 
@@ -211,7 +219,7 @@ function hydrate() {
   renderEducation();
   setupSearch();
   setupTheme();
-  setupMobileMenu()
+  setupMobileNav()
   if (window.lucide?.createIcons) window.lucide.createIcons();
 
 }
