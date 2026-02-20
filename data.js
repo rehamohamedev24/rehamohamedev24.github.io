@@ -11,7 +11,7 @@ window.PORTFOLIO = {
 
 
   summary:
-    "I craft beautiful, high-performance Android mobile apps with Kotlin, Firebase & Clean Architecture.",
+    "Android Developer specializing in building scalable, high-performance mobile applications using Kotlin, MVVM, and Clean Architecture.",
 
   highlights: [
     "Kotlin",
