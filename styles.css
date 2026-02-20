@@ -710,10 +710,12 @@ h3{margin:0 0 8px;font-size:16px}
   background: linear-gradient(90deg, rgba(0,230,118,.95), rgba(106,167,255,.95));
   color:#0b0d10;
   border-color:transparent;
+  font-family:'Outfit'
 }
 
 .btnHero--ghost{
   background: rgba(255,255,255,.03);
+  font-family:'Outfit'
 }
 
 .resumeLink{
@@ -752,31 +754,8 @@ h3{margin:0 0 8px;font-size:16px}
   border-color: rgba(37,211,102,.35);
 }
 
-/* Stats row */
-.heroStats{
-  margin-top:18px;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:12px;
-  max-width:520px;
-}
 
-.stat{
-  border-top:1px solid var(--border);
-  padding-top:12px;
-}
 
-.stat__num{
-  font-size:26px;
-  font-weight:900;
-  letter-spacing:-.5px;
-}
-
-.stat__label{
-  margin-top:4px;
-  font-size:12px;
-  color:var(--muted);
-}
 
 /* Profile glow */
 .profileImage{
