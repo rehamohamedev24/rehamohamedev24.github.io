@@ -662,27 +662,6 @@ h3{margin:0 0 8px;font-size:16px}
   pointer-events:none;
 }
 
-.hero__title{
-  margin:14px 0 10px;
-  font-size:52px;
-  line-height:1.05;
-  letter-spacing:-1px;
-}
-
-@media(max-width:720px){
-  .hero__title{font-size:40px}
-}
-.hero__title{
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.1;
-  color: var(--text);
-}
-
-.accentText{
-  color: var(--accent);
-}
-
 .heroActions{
   display:flex;
   gap:12px;
