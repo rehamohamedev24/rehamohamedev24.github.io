@@ -1,14 +1,16 @@
 :root{
-  --bg:#0b0d10;
-  --card:#10141b;
   --card2:#0f1217;
-  --text:#e9edf3;
-  --muted:#aab4c2;
   --border:rgba(255,255,255,.10);
   --shadow: 0 18px 45px rgba(0,0,0,.35);
   --radius:18px;
   --max: 1040px;
-  --accent: rgba(255,255,255,.92);
+  --bg: #0E1117;
+  --card: #151A23;
+  --card-soft: #1B2230;
+  --text: #F5F7FA;
+  --muted: #9CA3AF;
+  --accent: #8B5CF6;
+  --accent-soft: rgba(139,92,246,.15);
 }
 
 :root.light{
@@ -672,19 +674,15 @@ h3{margin:0 0 8px;font-size:16px}
 @media(max-width:720px){
   .hero__title{font-size:40px}
 }
-
-.gradText{
-  background: linear-gradient(90deg, #ffffff, #9aa6ff);
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
+.hero__title{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
 }
 
-.gradText2{
-  background: linear-gradient(90deg, #00e676, #6aa7ff);
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
+.accentText{
+  color: var(--accent);
 }
 
 .heroActions{
@@ -773,4 +771,36 @@ h3{margin:0 0 8px;font-size:16px}
   background: radial-gradient(220px 220px at 50% 45%, rgba(0,230,118,.18), transparent 60%);
   filter: blur(2px);
   pointer-events:none;
+}
+.hero__lead{
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 600px;
+}
+.btn--primary{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 30px rgba(139,92,246,.25);
+}
+
+.btn--primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(139,92,246,.35);
+}
+
+.btn--outline{
+  border: 1px solid rgba(255,255,255,.12);
+  background: transparent;
+  color: var(--text);
+}
+
+.btn--outline:hover{
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.hero{
+  background:
+    radial-gradient(600px 300px at 85% 20%, rgba(139,92,246,.08), transparent 60%),
+    var(--card);
 }
