@@ -103,12 +103,6 @@ a:hover{opacity:.92}
 }
 .hero.card{
   padding: 48px;
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 @media(min-width:960px){
@@ -263,14 +257,7 @@ h3{margin:0 0 8px;font-size:16px}
 .skill{
   display:flex;flex-direction:column;gap:10px
 }
-.skillCard{
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-}
+
 .skill__top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .skill__top b{font-size:16px}
 .skill__top span{font-size:14px;color:var(--muted)}
@@ -291,19 +278,17 @@ h3{margin:0 0 8px;font-size:16px}
   background: rgba(255,255,255,.03);
 }
 
-.tags{
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{
+  font-size:12px;color:var(--muted);
+  border:1px solid var(--border);
+  padding:6px 10px;border-radius:999px;
   position:relative;
   overflow:hidden;
   background:
     radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
     radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
     linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-      display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.tag{
-  font-size:12px;color:var(--muted);
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.02);
-  padding:6px 10px;border-radius:999px;
 }
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 
