@@ -189,7 +189,45 @@ function setupMobileNav() {
     if (!nav.contains(e.target)) nav.classList.remove("nav--open");
   });
 }
+function setupHeroPillAnimation() {
+  const textEl = document.querySelector("#pillText");
+  if (!textEl) return;
 
+  const phrases = [
+    "Android Developer",
+    "Mobile App Developer",
+    "Software Engineer",
+  ];
+
+  let i = 0;
+
+  // initial
+  textEl.textContent = phrases[i];
+
+  const cycle = () => {
+    // fade/slide out
+    textEl.classList.remove("is-in");
+    textEl.classList.add("is-out");
+
+    // بعد ما يختفي: نبدّل النص ونرجعه يظهر
+    setTimeout(() => {
+      i = (i + 1) % phrases.length;
+      textEl.textContent = phrases[i];
+
+      textEl.classList.remove("is-out");
+      textEl.classList.add("is-in");
+    }, 320);
+
+    // مدة بين كل كلمة والتانية
+    setTimeout(cycle, 1800);
+  };
+
+  // start after a short delay
+  setTimeout(() => {
+    textEl.classList.add("is-in");
+    setTimeout(cycle, 1800);
+  }, 200);
+}
 
 function hydrate() {
 
@@ -221,6 +259,7 @@ function hydrate() {
   setupSearch();
   setupTheme();
   setupMobileNav()
+  setupHeroPillAnimation();
   if (window.lucide?.createIcons) window.lucide.createIcons();
 
 }
