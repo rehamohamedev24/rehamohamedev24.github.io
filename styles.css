@@ -104,13 +104,17 @@ a:hover{opacity:.92}
 }
 
 .pill{
-  display:inline-flex; align-items:center; gap:8px;
-  font-size:12px;
-  color:var(--muted);
-  border:1px solid var(--border);
-  padding:7px 10px;
-  border-radius:999px;
+  align-items:center; gap:8px;
   background: rgba(255,255,255,.03);
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 50px;
+  color: #a78bfa;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  animation: fadeUp 0.6s ease both;
 }
 .hero__title{margin:12px 0 6px;font-size:40px;letter-spacing:-.6px;line-height:1.15}
 .hero__subtitle{margin-top:14;color:var(--muted)}
