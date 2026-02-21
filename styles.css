@@ -103,40 +103,48 @@ a:hover{opacity:.92}
   .hero{grid-template-columns: 1.35fr .65fr}
 }
 
-.pill{
-  overflow: hidden;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: rgba(139,92,246,.12);
-  border: 1px solid rgba(139,92,246,.25);
-  font-size: 13px;
+/* HERO animated pill */
+.heroPill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+  width: fit-content;
+  margin-bottom: 12px;
 }
 
-.pill__inner{
-  display: flex;
-  flex-direction: column;
-  animation: slideUp 6s infinite;
+.heroPill__dot{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background: var(--green, #00d47a);
+  box-shadow: 0 0 0 4px rgba(0, 212, 122, .15);
 }
 
-.pill__inner span{
-  height: 28px;
-  display: flex;
-  align-items: center;
+.heroPill__text{
+  display:inline-block;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.2px;
+  color: var(--text);
+  transition: transform .35s ease, opacity .35s ease;
+  will-change: transform, opacity;
 }
-@keyframes slideUp {
-  0%   { transform: translateY(0); }
-  25%  { transform: translateY(0); }
 
-  33%  { transform: translateY(-28px); }
-  58%  { transform: translateY(-28px); }
+/* لما يطلع لفوق ويختفي */
+.heroPill__text.is-out{
+  opacity: 0;
+  transform: translateY(-10px);
+}
 
-  66%  { transform: translateY(-56px); }
-  91%  { transform: translateY(-56px); }
-
-  100% { transform: translateY(0); }
+/* لما يرجع يظهر من تحت */
+.heroPill__text.is-in{
+  opacity: 1;
+  transform: translateY(0);
 }
 .hero__title{margin:12px 0 6px;font-size:40px;letter-spacing:-.6px;line-height:1.15}
 .hero__subtitle{margin-top:14;color:var(--muted)}
