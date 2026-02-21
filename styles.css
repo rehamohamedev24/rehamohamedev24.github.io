@@ -113,7 +113,7 @@ a:hover{opacity:.92}
   background: rgba(255,255,255,.03);
 }
 .hero__title{margin:12px 0 6px;font-size:40px;letter-spacing:-.6px;line-height:1.15}
-.hero__subtitle{margin:0;color:var(--muted)}
+.hero__subtitle{margin-top:14;color:var(--muted)}
 .hero__lead{margin-top:12px;color:rgba(233,237,243,.92)}
 :root.light .hero__lead{color:#1f2937}
 
