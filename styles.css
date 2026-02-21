@@ -84,6 +84,12 @@ a:hover{opacity:.92}
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding:20px;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 :root.light .card{background: var(--card)}
 .card--soft{
@@ -318,6 +324,7 @@ h3{margin:0 0 8px;font-size:16px}
 .search input::placeholder{color: var(--muted)}
 
 .projectCardLink{
+  background: rgba(255,255,255,.02);
   display: block;
   cursor: pointer;
   text-decoration: none;
@@ -424,14 +431,6 @@ h3{margin:0 0 8px;font-size:16px}
   padding: 8px 12px;
   white-space: nowrap;
 }
-.expCard{
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-}
 
 /* ===== Education with image ===== */
 
@@ -440,14 +439,7 @@ h3{margin:0 0 8px;font-size:16px}
   align-items:stretch;
   gap:20px;
 }
-.educationCard{
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-}
+
 
 .edu__imgWrap{
   flex-shrink:0;
@@ -538,12 +530,6 @@ h3{margin:0 0 8px;font-size:16px}
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 .contactTop{
@@ -668,12 +654,6 @@ h3{margin:0 0 8px;font-size:16px}
 .aboutCard{
   padding: 28px;
   line-height: 1.7;
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 .aboutText{
