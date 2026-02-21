@@ -79,16 +79,11 @@ a:hover{opacity:.92}
 .mode:hover{transform: translateY(-1px)}
 
 .card{
+  background: rgba(255,255,255,.02);
   border:1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding:20px;
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
-    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 :root.light .card{background: var(--card)}
 .card--soft{
@@ -102,6 +97,12 @@ a:hover{opacity:.92}
 }
 .hero.card{
   padding: 48px;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 @media(min-width:960px){
@@ -256,6 +257,14 @@ h3{margin:0 0 8px;font-size:16px}
 .skill{
   display:flex;flex-direction:column;gap:10px
 }
+.skillCard{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+}
 .skill__top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .skill__top b{font-size:16px}
 .skill__top span{font-size:14px;color:var(--muted)}
@@ -307,10 +316,7 @@ h3{margin:0 0 8px;font-size:16px}
   outline: none;
 }
 .search input::placeholder{color: var(--muted)}
-.projects.card{
-    background: rgba(255,255,255,.02);
 
-}
 .projectCardLink{
   display: block;
   cursor: pointer;
@@ -418,6 +424,14 @@ h3{margin:0 0 8px;font-size:16px}
   padding: 8px 12px;
   white-space: nowrap;
 }
+.expCard{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+}
 
 /* ===== Education with image ===== */
 
@@ -425,6 +439,14 @@ h3{margin:0 0 8px;font-size:16px}
   display:flex;
   align-items:stretch;
   gap:20px;
+}
+.eduCard{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 .edu__imgWrap{
@@ -516,6 +538,12 @@ h3{margin:0 0 8px;font-size:16px}
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 .contactTop{
@@ -640,6 +668,12 @@ h3{margin:0 0 8px;font-size:16px}
 .aboutCard{
   padding: 28px;
   line-height: 1.7;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(120, 0, 255, .22), transparent 60%),
+    radial-gradient(800px 500px at 90% 30%, rgba(0, 230, 118, .12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
 }
 
 .aboutText{
