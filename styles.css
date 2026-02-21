@@ -770,3 +770,8 @@ h3{margin:0 0 8px;font-size:16px}
     radial-gradient(600px 300px at 85% 20%, rgba(139,92,246,.08), transparent 60%),
     var(--card);
 }
+
+.gradient-text {
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    background-clip: text;
+}
