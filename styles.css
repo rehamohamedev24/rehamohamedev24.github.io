@@ -773,5 +773,7 @@ h3{margin:0 0 8px;font-size:16px}
 
 .gradient-text {
     background: linear-gradient(135deg, #7c3aed, #06b6d4);
-    background-clip: text;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
 }
