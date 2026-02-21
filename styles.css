@@ -685,17 +685,23 @@ h3{margin:0 0 8px;font-size:16px}
 
 .btnHero--primary{
   background: linear-gradient(90deg, rgba(0,230,118,.95), rgba(106,167,255,.95));
-  color:#0b0d10;
   box-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
   transition: transform 0.2s, box-shadow 0.2s;
   border: none;
   cursor: pointer;
   display: inline-block;
 }
-
+.btnHero--primary:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 40px rgba(124, 58, 237, 0.7);
+}
 .btnHero--ghost{
   background: rgba(255,255,255,.03);
   transition: border-color 0.2s, background 0.2s
+}
+.btnHero--ghost:hover{
+  border-color: linear-gradient(90deg, rgba(0,230,118,.95), rgba(106,167,255,.95));
+  background: rgba(255,255,255,.08);
 }
 
 .resumeLink{
