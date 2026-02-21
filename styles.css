@@ -685,7 +685,7 @@ h3{margin:0 0 8px;font-size:16px}
 .btnHero svg{width:18px;height:18px}
 
 .btnHero--primary{
-  background: linear-gradient(90deg, rgba(0,230,118,.95), rgba(106,167,255,.95));
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
   box-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
   transition: transform 0.2s, box-shadow 0.2s;
   border: none;
