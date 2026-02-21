@@ -726,6 +726,9 @@ h3{margin:0 0 8px;font-size:16px}
   cursor: pointer;
   display: inline-block;
 }
+:root.light .btnHero--primary{
+  color:#ffffff
+}
 .btnHero--primary:hover{
   transform: translateY(-3px);
   box-shadow: 0 6px 40px rgba(124, 58, 237, 0.7);
