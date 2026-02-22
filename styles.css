@@ -651,7 +651,6 @@ h3{margin:0 0 8px;font-size:16px}
 .aboutText{
   font-size: 15px;
   color: var(--muted);
-  max-width: 700px;
 }
 
 .aboutText p{
