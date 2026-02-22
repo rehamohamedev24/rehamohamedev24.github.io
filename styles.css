@@ -883,13 +883,21 @@ h3{margin:0 0 8px;font-size:16px}
 .btnSocial{
   display:inline-flex;
   align-items:center;
-  gap:8px;
   padding:8px 12px;   /* أصغر */
   border-radius:999px;
   font-weight:600;
   font-size:14px;      /* أصغر */
   border:1px solid rgba(255,255,255,.08);
   transition: all .2s ease;
+}
+
+/* Icon Box */
+.btnSocial__iconBox{
+  width:26px;
+  height:26px;
+  border-radius:8px;
+  display:grid;
+  place-items:center;
 }
 
 
