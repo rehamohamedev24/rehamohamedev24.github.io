@@ -876,7 +876,7 @@ h3{margin:0 0 8px;font-size:16px}
 .aboutBtns{
   display:flex;
   gap:12px;
-  margin-top:16px;
+  margin-top:20px;
   flex-wrap:wrap;
 }
 
@@ -884,7 +884,7 @@ h3{margin:0 0 8px;font-size:16px}
   display:inline-flex;
   align-items:center;
   gap:8px;
-  padding:10px 16px;   /* أصغر */
+  padding:8px 12px;   /* أصغر */
   border-radius:999px;
   font-weight:600;
   font-size:14px;      /* أصغر */
