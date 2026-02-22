@@ -88,6 +88,7 @@ function projectCard(p) {
 
 function renderProjects(list) {
   const grid = $("#projectsGrid");
+  if (!grid) return;
   grid.innerHTML = list.map(projectCard).join("");
 }
 
@@ -137,9 +138,11 @@ function renderEducation() {
 
 function setupSearch() {
   const input = $("#projectSearch");
+  if (!input) return;   // 👈 أهم سطر
+
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
-    const filtered = data.projects.filter(p => {
+    const filtered = (data.projects || []).filter(p => {
       const hay = (p.title + " " + p.description + " " + p.tech.join(" ")).toLowerCase();
       return hay.includes(q);
     });
