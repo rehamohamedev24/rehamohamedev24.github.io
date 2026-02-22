@@ -839,45 +839,8 @@ h3{margin:0 0 8px;font-size:16px}
 }
 :root.light .aboutText{ color:#111827; }
 
-/* Buttons */
-.aboutBtns{
-  margin-top: 18px;
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.aboutBtn{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding: 12px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.03);
-  color: var(--text);
-  font-weight: 700;
-}
-
-.aboutBtn:hover{
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,.22);
-}
 
 
-/* icons (simple) */
-.aboutBtn__icon{
-  width: 26px;
-  height: 26px;
-  border-radius: 8px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  background: rgba(0,0,0,.25);
-  border: 1px solid rgba(255,255,255,.10);
-  font-size: 13px;
-  font-weight: 900;
-}
 
 /* ===== ABOUT Senior Typography ===== */
 
