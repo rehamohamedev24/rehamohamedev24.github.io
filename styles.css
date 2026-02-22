@@ -914,7 +914,6 @@ h3{margin:0 0 8px;font-size:16px}
 }
 
 .btnSocial--linkedin .btnSocial__iconBox{
-  background:rgba(255,255,255,.15);
   color:white;
 }
 
@@ -926,7 +925,6 @@ h3{margin:0 0 8px;font-size:16px}
 }
 
 .btnSocial--github .btnSocial__iconBox{
-  background:rgba(255,255,255,.08);
   color:white;
 }
 
