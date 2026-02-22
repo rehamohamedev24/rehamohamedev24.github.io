@@ -779,7 +779,7 @@ h3{margin:0 0 8px;font-size:16px}
 }
 .iconBtn svg{width:20px;height:20px}
 
-.iconBtn[href*="wa.me"] svg{stroke:#25D366;}
+.iconBtn[href*="wa.me"] 
 .iconBtn[href*="wa.me"]:hover{
   background: rgba(37,211,102,.12);
   border-color: rgba(37,211,102,.35);
