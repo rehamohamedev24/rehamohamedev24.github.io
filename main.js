@@ -254,7 +254,8 @@ function hydrate() {
   setHref("#linkedinBtn", data.linkedin);
   setHref("#linkedinBtn2", data.linkedin);
   setHref("#whatsappBtn", data.whatsapp);
-
+  setHref("#linkedinAbout", data.linkedin);
+  setHref("#githubAbout", data.github);
   renderSkills();
   renderProjects(data.projects);
   renderExperience();
