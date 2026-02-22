@@ -43,7 +43,7 @@ window.PORTFOLIO = {
       title: "E-Commerce App",
       image: "assets/projects/ecommerce.png",
       description:
-        "Developed a full-featured Android e-commerce application that enables users to browse and search products, view detailed product information, manage favorites, and complete purchases through a smooth cart and checkout flow. Implemented the app end-to-end using Multi-Module Clean Architecture (app, domain, data) and MVVM, ensuring scalability and clean separation of concerns. Added local caching to support offline usage, improving reliability and user experience. The app supports 100+ products with smooth navigation and responsive UI.",
+        "Developed a full-featured Android e-commerce application that enables users to browse and search products, view detailed product information, manage favorites, and complete purchases through a smooth cart and checkout flow. Implemented the app end-to-end using Multi-Module Clean Architecture (app, domain, data) and MVVM, ensuring scalability and clean separation of concerns.",
       tech: ["Kotlin", "MVVM", "Clean Architecture", "Room", "Retrofit", "Hilt"],
       github: "https://github.com/rehamohamedev24/E-Commerce",
       live: "",
@@ -52,7 +52,7 @@ window.PORTFOLIO = {
       title: "FlashFeed News App",
       image: "assets/projects/news.png",
       description:
-        "FlashFeed is an Android news application that enables users to browse, search, and read real-time news articles across multiple categories through a clean and intuitive interface. The app follows Multi-Module Clean Architecture with clearly separated app, domain, and data modules, ensuring high scalability and testability. Developed end-to-end using MVVM architecture, optimized data handling with proper loading and error states, and improved overall app performance by approximately 20–25% through efficient state management, optimized network calls, and Hilt dependency injection.",
+        "FlashFeed is an Android news application that enables users to browse, search, and read real-time news articles across multiple categories through a clean and intuitive interface. The app follows Multi-Module Clean Architecture with clearly separated app, domain, and data modules, ensuring high scalability and testability.",
       tech: ["Kotlin", "MVVM", "Hilt", "Retrofit", "Coroutines"],
       github: "https://github.com/rehamohamedev24/FlashFeed_News_App",
       live: "",
