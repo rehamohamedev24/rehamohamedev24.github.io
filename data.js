@@ -52,8 +52,7 @@ window.PORTFOLIO = {
       title: "FlashFeed News App",
       image: "assets/projects/news.png",
       description:
-        "FlashFeed is an Android news application that enables users to browse, search, and read real-time news articles across multiple categories through a clean and intuitive interface. The app follows Multi-Module Clean Architecture with clearly separated app, domain, and data modules, ensuring high scalability and testability. Developed end-to-end using MVVM architecture, optimized data handling with proper loading and error states, and improved overall app performance by approximately 20–25% through efficient state management, optimized network calls, and Hilt dependency injection.
-",
+        "FlashFeed is an Android news application that enables users to browse, search, and read real-time news articles across multiple categories through a clean and intuitive interface. The app follows Multi-Module Clean Architecture with clearly separated app, domain, and data modules, ensuring high scalability and testability. Developed end-to-end using MVVM architecture, optimized data handling with proper loading and error states, and improved overall app performance by approximately 20–25% through efficient state management, optimized network calls, and Hilt dependency injection.",
       tech: ["Kotlin", "MVVM", "Hilt", "Retrofit", "Coroutines"],
       github: "https://github.com/rehamohamedev24/FlashFeed_News_App",
       live: "",
