@@ -11,7 +11,7 @@ window.PORTFOLIO = {
 
 
   summary:
-    "Android Developer specializing in building scalable, high-performance mobile applications using Kotlin, MVVM, and Clean Architecture. Passionate about crafting high-quality mobile solutions with clean, maintainable code and modern architecture principles",
+    "Android Developer specializing in building scalable, high-performance mobile applications using Kotlin, MVVM, and Clean Architecture.",
   highlights: [
     "Kotlin",
     "MVVM",
