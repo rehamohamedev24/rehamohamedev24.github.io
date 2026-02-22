@@ -883,6 +883,7 @@ h3{margin:0 0 8px;font-size:16px}
 .btnSocial{
   display:inline-flex;
   align-items:center;
+   gap:4px;
   padding:8px 12px;   /* أصغر */
   border-radius:999px;
   font-weight:600;
@@ -901,8 +902,8 @@ h3{margin:0 0 8px;font-size:16px}
 }
 
 .btnSocial__iconBox svg{
-  width:18px;
-  height:18px;
+  width:16px;
+  height:16px;
 }
 /* 🔵 LinkedIn */
 .btnSocial--linkedin{
