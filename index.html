@@ -17,10 +17,11 @@
       </a>
 
       <nav class="nav__links">
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav__actions">
@@ -69,6 +70,13 @@
             <i data-lucide="linkedin"></i>
           </a>
 
+          <a class="iconBtn" id="whatsappBtn" href="#" target="_blank" aria-label="WhatsApp">
+            <i data-lucide="message-circle"></i>
+          </a>
+
+</div>
+
+
       </div>
 
  </div>
@@ -78,11 +86,55 @@
   </div>
 </div>
 
-
-
-
     </section>
 
+
+    <!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section__head">
+    <div class="icon">
+      <i data-lucide="user"></i>
+    </div>
+    <div>
+      <h2>About Me</h2>
+      <p class="muted">Get to know me better</p>
+    </div>
+  </div>
+
+  <div class="card aboutCard">
+    
+    <div class="aboutText">
+      <p>
+        Android Developer and Computer Science graduate with hands-on experience building 5+ Android applications using Kotlin. Skilled in Jetpack Compose, Android Jetpack components, MVVM, and modular Clean Architecture with a strong focus on performance, scalability, and user experience.
+      </p>
+
+      <p>
+        I have hands-on experience developing real Android apps with modern tools like Jetpack, Retrofit, Room, and Firebase. I focus on writing clean, maintainable code and delivering smooth user experiences.
+      </p>
+
+      <p>
+        I’m passionate about mobile development and continuously improving my skills to build reliable and impactful applications.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+        <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <div class="icon">
+          <i data-lucide="graduation-cap"></i>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <p class="muted">Academic background</p>
+        </div>
+      </div>
+
+      <div class="card" id="educationCard"></div>
+    </section>
+    
     <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="section__head">
@@ -98,6 +150,21 @@
       <div class="grid grid--2" id="skillsGrid"></div>
     </section>
 
+        <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <div class="icon">
+          <i data-lucide="briefcase"></i>
+        </div>
+        <div>
+          <h2>Experience</h2>
+          <p class="muted">Training & internships</p>
+        </div>
+      </div>
+
+      <div class="stack" id="experienceStack"></div>
+    </section>
+    
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="section__head section__head--row">
@@ -120,35 +187,6 @@
       <div class="grid grid--2" id="projectsGrid"></div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="section__head">
-        <div class="icon">
-          <i data-lucide="briefcase"></i>
-        </div>
-        <div>
-          <h2>Experience</h2>
-          <p class="muted">Training & internships</p>
-        </div>
-      </div>
-
-      <div class="stack" id="experienceStack"></div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <div class="section__head">
-        <div class="icon">
-          <i data-lucide="graduation-cap"></i>
-        </div>
-        <div>
-          <h2>Education</h2>
-          <p class="muted">Academic background</p>
-        </div>
-      </div>
-
-      <div class="card" id="educationCard"></div>
-    </section>
 
     <!-- CONTACT -->
     <section class="section" id="contact">
