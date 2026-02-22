@@ -921,3 +921,73 @@ h3{margin:0 0 8px;font-size:16px}
   line-height: 1.8;
   color: var(--muted);
 }
+/* ===== About Buttons (LinkedIn / GitHub) ===== */
+.aboutBtns{
+  display:flex;
+  gap:14px;
+  margin-top:18px;
+  flex-wrap:wrap;
+}
+
+.btnSocial{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:700;
+  letter-spacing:.2px;
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+
+.btnSocial:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 22px 55px rgba(0,0,0,.45);
+  opacity:.98;
+}
+
+.btnSocial__iconBox{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background: rgba(0,0,0,.18);
+  border:1px solid rgba(255,255,255,.14);
+}
+
+.btnSocial__iconBox svg{
+  width:18px;
+  height:18px;
+}
+
+.btnSocial__text{
+  font-size:15px;
+  line-height:1;
+}
+
+/* LinkedIn (gradient like screenshot) */
+.btnSocial--linkedin{
+  color:#06121a;
+  border-color: transparent;
+  background: linear-gradient(90deg, #20c6ff 0%, #7c3aed 100%);
+}
+.btnSocial--linkedin .btnSocial__iconBox{
+  background: rgba(255,255,255,.18);
+  border-color: rgba(255,255,255,.22);
+  color:#06121a;
+}
+
+/* GitHub (dark pill like screenshot) */
+.btnSocial--github{
+  color: rgba(255,255,255,.92);
+  background: radial-gradient(120% 120% at 30% 10%, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border-color: rgba(255,255,255,.12);
+}
+.btnSocial__iconBox--dark{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.12);
+  color: rgba(255,255,255,.92);
+}
